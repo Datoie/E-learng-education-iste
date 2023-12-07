@@ -245,6 +245,9 @@ footer p{
     footer p {
         font-size: 15px;
     }
+    .footer-heading p, .footer-heading h2{
+        max-width:none;
+    }
 }
 @media (max-width:750px) {
     .right img:not(:first-child){

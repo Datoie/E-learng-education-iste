@@ -1,3 +1,15 @@
+// photo
+
+const photo = document.getElementById('avatar');
+const btn = document.getElementById('fix');
+
+let photoWidth = photo.width;
+let topHeight = 37 - ( ( 530 - photoWidth ) / 16 );
+
+btn.onload = btn.style.top = `${topHeight}rem`
+
+console.log(document)
+
 // hamburger
 const menu = document.getElementsByClassName('menu')
 const nav = dcoument = document.getElementsByTagName('nav')
@@ -19,15 +31,3 @@ menu[0].addEventListener('click', function(){
         count = 0 
     };
 });
-
-// photo
-
-const photo = document.getElementById('avatar');
-const btn = document.getElementById('fix');
-
-let photoWidth = photo.width;
-let topHeight = 37 - ( ( 530 - photoWidth ) / 16 );
-
-btn.onload = btn.style.top = `${topHeight}rem`
-
-console.log(document)
